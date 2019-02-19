@@ -1,0 +1,6 @@
+<i  *ngFor="let r of rates, index" class="fa" 
+  [class.fa-star]="r <= rate" [class.fa-star-o]="r > rate"
+  (click)="setRateValue(r)"
+  (mouseenter)="setPreview(r)"
+  (mouseleave)="resetRating()"
+></i>
